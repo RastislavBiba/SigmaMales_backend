@@ -7,11 +7,15 @@ import java.util.List;
 @RestController
 public class UmbController {
 
-    public UmbController(List<Book> books) {
-        this.books = init();
+    public UmbController() { //odstranil som z argumentu kvoli chybam: List<Book> books, List<BorrowedBook> borrowings, List<User> users
+        this.books = initBooks();
+        this.borrowings = initBorrowed();
+        this.users = initUsers();
     }
 
     private List<Book> books;
+    private List<BorrowedBook> borrowings;
+    private List<User> users;
 
     @GetMapping("/api/books")
     public List<Book> getBooks(@RequestParam(required = false) String bookAuthor){
@@ -25,8 +29,19 @@ public class UmbController {
         return this.books;
     }
 
+    private List<User> initUsers(){
+        List<User> users = new ArrayList<>();
+        User user1 = new User();
+        user1.setId(1);
+        user1.setFirstName("adam");
+        user1.setLastName("novy");
+        user1.setEmail("random mail");
 
-    private List<Book> init(){
+        users.add(user1);
+        return users;
+    }
+
+    private List<Book> initBooks(){
         List<Book> books = new ArrayList<>();
         Book book1 = new Book();
         book1.setAuthor("Arthur");
@@ -40,6 +55,21 @@ public class UmbController {
 
         return books;
     }
+
+    private List<BorrowedBook> initBorrowed(){
+        List<BorrowedBook> borrowings = new ArrayList<>();
+        BorrowedBook borrowed1 = new BorrowedBook();
+
+        borrowed1.setBook(books.get(0));
+        borrowed1.setBorrower(new User()); //pokus
+        borrowed1.setId(1);
+
+        borrowings.add(borrowed1);
+
+        return borrowings;
+    }
+
+
 
     @GetMapping("/api/book/{bookId}")
     public Book getBook(@PathVariable Integer bookId){
@@ -63,6 +93,42 @@ public class UmbController {
 
 
 
+    //borrowings
+
+    @PostMapping("/api/borrowings")
+    public Integer createBorrowing(@RequestBody int id, int bookId){
+        BorrowedBook borrowed = new BorrowedBook();
+        borrowed.setBorrower(users.get(id));
+        borrowed.setBook(books.get(bookId));
+
+
+        this.borrowings.add(borrowed);
+        return this.borrowings.size()-1;
+    }
+
+    @GetMapping("/api/borrowings")
+    public List<BorrowedBook> getBorrowings(@RequestParam(required = false) String bookAuthor){
+
+        /*List<Book> filteredBooks = new ArrayList<>();
+        for (Book book : books){
+            if (book.getAuthor().equals(bookAuthor)){
+                filteredBooks.add(book);
+            }
+        }
+        Book book = new Book();*/
+
+        return this.borrowings;
+    }
+
+    @GetMapping("/api/borrowing/{id}")
+    public BorrowedBook getBorrowings(@PathVariable Integer id){
+        return this.borrowings.get(id);
+    }
+
+    @DeleteMapping("/api/borrowings/{id}")
+    public void DeleteBorrowing(@PathVariable Integer id){
+        this.borrowings.remove(this.borrowings.get(id));
+    }
 
 
 }

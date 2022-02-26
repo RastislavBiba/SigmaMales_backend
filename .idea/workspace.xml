@@ -22,13 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added user class with controller">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="borrowedbook uprava, users uprava">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/BorrowedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/BorrowedBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="4" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="74ef7e10-f762-4b1c-bd33-82a7227db2c8" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,7 +143,7 @@
       <workItem from="1645881515864" duration="277000" />
       <workItem from="1645881976212" duration="896000" />
       <workItem from="1645882935525" duration="229000" />
-      <workItem from="1645883334614" duration="839000" />
+      <workItem from="1645883334614" duration="6691000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645474173596</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="doplnenie kodu">
+      <created>1645884219679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645884219679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +194,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
     <MESSAGE value="Added user class with controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user class with controller" />
+    <MESSAGE value="doplnenie kodu" />
+    <MESSAGE value="borrowedbook uprava, users uprava" />
+    <option name="LAST_COMMIT_MESSAGE" value="borrowedbook uprava, users uprava" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="10" width="702" height="803" key="#DemoApplication" timestamp="1645881081664">
@@ -207,41 +219,53 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881000161" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1645883728665">
+    <state x="629" y="324" key="Github.Dialog.Accounts.Choose" timestamp="1645884246546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1645883728665">
+    <state x="629" y="324" key="Github.Dialog.Accounts.Choose/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884246546" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1645883728664">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728664" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1645883728665">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1645883728665">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1645883728665">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1645899590551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1645883728665">
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590551" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1645883728665">
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1645899590550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883728665" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1645899590551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590551" />
     <state x="12" y="0" key="SettingsEditor" timestamp="1645882941242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="12" y="0" key="SettingsEditor/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645882941242" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1645884262709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884262709" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645896338652">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645896338652" />
   </component>
 </project>

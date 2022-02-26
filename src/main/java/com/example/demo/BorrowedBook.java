@@ -1,15 +1,15 @@
 package com.example.demo;
 
 public class BorrowedBook {
-    Long id;
-    User borrower;
-    Book book;
+    private int id;
+    private User borrower;
+    private Book book;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
