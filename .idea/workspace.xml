@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Upload Rest API with Library backend.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added user class with controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +106,10 @@
       <workItem from="1645461270746" duration="336000" />
       <workItem from="1645471032063" duration="454000" />
       <workItem from="1645472410626" duration="1134000" />
+      <workItem from="1645474128989" duration="202000" />
+      <workItem from="1645534430454" duration="701000" />
+      <workItem from="1645535304959" duration="139000" />
+      <workItem from="1645535835752" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -123,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644960966288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added user class with controller">
+      <created>1645474173596</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645474173596</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload Rest API with Library backend." />
+    <MESSAGE value="Added user class with controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user class with controller" />
   </component>
 </project>
