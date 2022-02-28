@@ -1,24 +1,20 @@
 package com.example.demo;
-import org.springframework.web.bind.annotation.*;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController
-public class UmbController {
-
-    public UmbController() { //odstranil som z argumentu kvoli chybam: List<Book> books, List<BorrowedBook> borrowings, List<User> users
-        this.books = initBooks();
-        this.borrowings = initBorrowed();
-        this.users = initUsers();
-    }
-
+@Service
+public class BookService {
     private List<Book> books;
     private List<BorrowedBook> borrowings;
     private List<User> users;
     private BookService bookService;
 
-    @GetMapping("/api/books")
     public List<Book> getBooks(@RequestParam(required = false) String bookAuthor){
         List<Book> filteredBooks = new ArrayList<>();
         for (Book book : books){
@@ -71,22 +67,21 @@ public class UmbController {
     }
 
 
-
-    @GetMapping("/api/book/{bookId}")
     public Book getBook(@PathVariable Integer bookId){
-    return bookService.getBook(bookId);
+        return this.books.get(bookId);
     }
-    @PostMapping("/api/books")
+
     public Integer createBook(@RequestBody Book book){
-        return bookService.createBook(book);
+        this.books.add(book);
+        return this.books.size()-1;
     }
-    @DeleteMapping("/api/book/{bookId}")
     public void DeleteBook(@PathVariable Integer bookId){
-        bookService.DeleteBook(bookId);
+        this.books.remove(this.books.get(bookId));
     }
-    @PutMapping("/api/book/{bookId}")
+
     public void updateBook(@PathVariable Integer bookId, @RequestBody Book book){
-        bookService.updateBook(bookId, book);
+        this.books.get(bookId).setTitle(book.getTitle());
+        this.books.get(bookId).setAuthor(book.getAuthor());
     }
 
 
@@ -94,7 +89,7 @@ public class UmbController {
 
     //borrowings
 
-    @PostMapping("/api/borrowings")
+
     public Integer createBorrowing(@RequestBody int id, int bookId){
         BorrowedBook borrowed = new BorrowedBook();
         borrowed.setBorrower(users.get(id));
@@ -105,8 +100,10 @@ public class UmbController {
         return this.borrowings.size()-1;
     }
 
-    @GetMapping("/api/borrowings")
-    public List<BorrowedBook> getBorrowings(@RequestParam(required = false) String bookAuthor){
+
+
+
+    // public List<BorrowedBook> getBorrowings(@RequestParam(required = false) String bookAuthor){
 
         /*List<Book> filteredBooks = new ArrayList<>();
         for (Book book : books){
@@ -116,18 +113,17 @@ public class UmbController {
         }
         Book book = new Book();*/
 
-        return this.borrowings;
-    }
+     //   return this.borrowings;
+  //  }
 
-    @GetMapping("/api/borrowing/{id}")
-    public BorrowedBook getBorrowings(@PathVariable Integer id){
-        return bookService.getBorrowings(id);
-    }
+  //  public static BorrowedBook getBorrowings(@PathVariable Integer id){
+  //      return this.borrowings.get(id);
+  //  }
 
-    @DeleteMapping("/api/borrowings/{id}")
-    public void DeleteBorrowing(@PathVariable Integer id){
-        bookService.DeleteBorrowing(this.books.remove(this.books.get(id)));
-    }
-
+  //  public void DeleteBorrowing(@PathVariable Integer id){
+  //      this.borrowings.remove(this.borrowings.get(id));
+   // }
 
 }
+
+

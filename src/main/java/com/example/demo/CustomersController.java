@@ -11,6 +11,7 @@ public class CustomersController{
         this.users = init();
     }
     private List<User> users;
+    private CustomerService customerService;
     private List<User> init(){
         List<User> users = new ArrayList<>();
         User user1 = new User();
@@ -25,37 +26,24 @@ public class CustomersController{
     }
     @PostMapping("/api/customer")
     public Integer createCustomer(@RequestBody User user){
-        this.users.add(user);
-        return this.users.size()-1;
+        return customerService.createCustomer(user);
     }
     @GetMapping("/api/customers/{customerId}")
     public User listCustomers(@PathVariable int customerId){
-        return this.users.get(customerId);
+        return customerService.listCustomers(customerId);
     }
     @GetMapping("/api/customers")
     public List<User> getList(@RequestParam(required = false) String firstName){
-        List<User> filteredUsers = new ArrayList<>();
-        for (User user : users){
-            if (user.getFirstName().equals(firstName)){
-                filteredUsers.add(user);
-            }
-        }
-        User user = new User();
-        return this.users;
+
+        return customerService.getList(firstName);
     }
     @GetMapping("/api/customers/{Id}")
     public List<User> getUserId(@RequestParam(required = false) Integer customerId){
-        List<User> filteredUsers = new ArrayList<>();
-        for (User user : users){
-            if (user.getId() == customerId){
-                filteredUsers.add(user);
-            }
-        }
-        User user = new User();
-        return this.users;
+
+        return customerService.getUserId(customerId);
     }
     @DeleteMapping("/api/customers/{Id}")
     public void deleteCustomer(@PathVariable Integer userId){
-        this.users.remove(this.users.get(userId));
+        customerService.deleteCustomer(userId);
     }
 }

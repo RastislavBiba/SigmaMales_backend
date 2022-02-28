@@ -22,12 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="borrowedbook uprava, users uprava">
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added user class with controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/BorrowedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/BorrowedBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +57,16 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="25A94oxUAbfgyNrPNRKUOeA3rNC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -93,10 +107,12 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SigmaMales" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,8 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.DemoApplication (1)" />
+    </list>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -143,7 +163,8 @@
       <workItem from="1645881515864" duration="277000" />
       <workItem from="1645881976212" duration="896000" />
       <workItem from="1645882935525" duration="229000" />
-      <workItem from="1645883334614" duration="6691000" />
+      <workItem from="1645883334614" duration="839000" />
+      <workItem from="1646077609994" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -177,7 +198,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -189,83 +210,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
     <MESSAGE value="Added user class with controller" />
-    <MESSAGE value="doplnenie kodu" />
-    <MESSAGE value="borrowedbook uprava, users uprava" />
-    <option name="LAST_COMMIT_MESSAGE" value="borrowedbook uprava, users uprava" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="10" width="702" height="803" key="#DemoApplication" timestamp="1645881081664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="10" width="702" height="803" key="#DemoApplication/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881081664" />
-    <state x="424" y="10" key="#DemoApplication_(1)" timestamp="1645880934399">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="10" key="#DemoApplication_(1)/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645880934399" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645882310784">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645882310784" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1645883714407">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645883714407" />
-    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1645881000161">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881000161" />
-    <state x="629" y="324" key="Github.Dialog.Accounts.Choose" timestamp="1645884246546">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="629" y="324" key="Github.Dialog.Accounts.Choose/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884246546" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1645899590551">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590551" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1645899590550">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590550" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1645899590551">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899590551" />
-    <state x="12" y="0" key="SettingsEditor" timestamp="1645882941242">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="12" y="0" key="SettingsEditor/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645882941242" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1645884262709">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884262709" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645896338652">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645896338652" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user class with controller" />
   </component>
 </project>
