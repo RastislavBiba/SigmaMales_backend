@@ -22,17 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added user class with controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added class services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,7 @@
     <option name="projectConfigVersion" value="4" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="74ef7e10-f762-4b1c-bd33-82a7227db2c8" />
+    <option name="defaultAccountId" value="623a9840-34e0-4a06-bb7e-9be6bee0c89f" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +84,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,7 +155,7 @@
       <workItem from="1645881976212" duration="896000" />
       <workItem from="1645882935525" duration="229000" />
       <workItem from="1645883334614" duration="839000" />
-      <workItem from="1646077609994" duration="3230000" />
+      <workItem from="1646077609994" duration="3665000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -194,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645884219679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added class services">
+      <created>1646081195703</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646081195703</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
     <MESSAGE value="Added user class with controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user class with controller" />
+    <MESSAGE value="Added class services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added class services" />
   </component>
 </project>
