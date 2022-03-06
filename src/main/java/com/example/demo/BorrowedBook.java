@@ -2,8 +2,8 @@ package com.example.demo;
 
 public class BorrowedBook {
     private int id;
-    private User borrower;
-    private Book book;
+    private String borrower;
+    private String book;
 
     public int getId() {
         return id;
@@ -13,19 +13,17 @@ public class BorrowedBook {
         this.id = id;
     }
 
-    public User getBorrower() {
-        return borrower;
-    }
+    public String getBorrower() { return borrower; }
 
-    public void setBorrower(User borrower) {
+    public void setBorrower(String borrower) {
         this.borrower = borrower;
     }
 
-    public Book getBook() {
+    public String getBook() {
         return book;
     }
 
-    public void setBook(Book book) {
+    public void setBook(String book) {
         this.book = book;
     }
 }

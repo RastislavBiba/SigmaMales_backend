@@ -22,8 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added class services">
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="edit + services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_02_2022,_16_17_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_02_2022__16_17__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2022__11_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2022__11_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/UmbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/CustomersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/CustomersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/UmbController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +55,10 @@
     <option name="projectConfigVersion" value="4" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="623a9840-34e0-4a06-bb7e-9be6bee0c89f" />
+    <option name="defaultAccountId" value="74ef7e10-f762-4b1c-bd33-82a7227db2c8" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="25A94oxUAbfgyNrPNRKUOeA3rNC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,9 +85,12 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -98,12 +102,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SigmaMales" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,12 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Spring Boot.DemoApplication (1)" />
-    </list>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -154,8 +152,10 @@
       <workItem from="1645881515864" duration="277000" />
       <workItem from="1645881976212" duration="896000" />
       <workItem from="1645882935525" duration="229000" />
-      <workItem from="1645883334614" duration="839000" />
-      <workItem from="1646077609994" duration="3665000" />
+      <workItem from="1645883334614" duration="6781000" />
+      <workItem from="1646049451630" duration="65000" />
+      <workItem from="1646139073852" duration="263000" />
+      <workItem from="1646580242630" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -185,18 +185,18 @@
       <option name="project" value="LOCAL" />
       <updated>1645884219679</updated>
     </task>
-    <task id="LOCAL-00005" summary="Added class services">
-      <created>1646081195703</created>
+    <task id="LOCAL-00005" summary="borrowedbook uprava, users uprava">
+      <created>1645899700767</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1646081195703</updated>
+      <updated>1645899700767</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -208,11 +208,98 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
     <MESSAGE value="Added user class with controller" />
-    <MESSAGE value="Added class services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class services" />
+    <MESSAGE value="doplnenie kodu" />
+    <MESSAGE value="borrowedbook uprava, users uprava" />
+    <MESSAGE value="edit + services" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit + services" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="10" width="702" height="803" key="#DemoApplication" timestamp="1645881081664">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="424" y="10" width="702" height="803" key="#DemoApplication/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881081664" />
+    <state x="424" y="10" key="#DemoApplication_(1)" timestamp="1645880934399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="424" y="10" key="#DemoApplication_(1)/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645880934399" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645882310784">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645882310784" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1646580925454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646580925454" />
+    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1645881000161">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881000161" />
+    <state x="629" y="324" key="Github.Dialog.Accounts.Choose" timestamp="1645884246546">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="629" y="324" key="Github.Dialog.Accounts.Choose/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884246546" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646049517104" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1646582821833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582821833" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
+    <state x="147" y="64" key="MergeDialog" timestamp="1646139240085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="64" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1646139240085" />
+    <state x="12" y="0" key="SettingsEditor" timestamp="1646580287713">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="12" y="0" key="SettingsEditor/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646580287713" />
+    <state x="12" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646049463757" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1645899726943">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645899726943" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1646580246263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646580246263" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1646139203524" />
   </component>
 </project>

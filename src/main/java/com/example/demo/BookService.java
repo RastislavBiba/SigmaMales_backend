@@ -53,18 +53,7 @@ public class BookService {
         return books;
     }
 
-    private List<BorrowedBook> initBorrowed(){
-        List<BorrowedBook> borrowings = new ArrayList<>();
-        BorrowedBook borrowed1 = new BorrowedBook();
 
-        borrowed1.setBook(books.get(0));
-        borrowed1.setBorrower(new User()); //pokus
-        borrowed1.setId(1);
-
-        borrowings.add(borrowed1);
-
-        return borrowings;
-    }
 
 
     public Book getBook(@PathVariable Integer bookId){
@@ -90,15 +79,6 @@ public class BookService {
     //borrowings
 
 
-    public Integer createBorrowing(@RequestBody int id, int bookId){
-        BorrowedBook borrowed = new BorrowedBook();
-        borrowed.setBorrower(users.get(id));
-        borrowed.setBook(books.get(bookId));
-
-
-        this.borrowings.add(borrowed);
-        return this.borrowings.size()-1;
-    }
 
 
 

@@ -9,7 +9,7 @@ public class UmbController {
 
     public UmbController() { //odstranil som z argumentu kvoli chybam: List<Book> books, List<BorrowedBook> borrowings, List<User> users
         this.books = initBooks();
-        this.borrowings = initBorrowed();
+
         this.users = initUsers();
     }
 
@@ -17,6 +17,7 @@ public class UmbController {
     private List<BorrowedBook> borrowings;
     private List<User> users;
     private BookService bookService;
+    private BorrowedService borrowedService;
 
     @GetMapping("/api/books")
     public List<Book> getBooks(@RequestParam(required = false) String bookAuthor){
@@ -57,18 +58,7 @@ public class UmbController {
         return books;
     }
 
-    private List<BorrowedBook> initBorrowed(){
-        List<BorrowedBook> borrowings = new ArrayList<>();
-        BorrowedBook borrowed1 = new BorrowedBook();
 
-        borrowed1.setBook(books.get(0));
-        borrowed1.setBorrower(new User()); //pokus
-        borrowed1.setId(1);
-
-        borrowings.add(borrowed1);
-
-        return borrowings;
-    }
 
 
 
@@ -95,10 +85,13 @@ public class UmbController {
     //borrowings
 
     @PostMapping("/api/borrowings")
+    public BorrowedBook getBorrowedBook(@PathVariable Integer id){
+        return borrowedService.getBorrowings(id);
+    }
     public Integer createBorrowing(@RequestBody int id, int bookId){
         BorrowedBook borrowed = new BorrowedBook();
-        borrowed.setBorrower(users.get(id));
-        borrowed.setBook(books.get(bookId));
+        borrowed.setBorrower("borr");
+        borrowed.setBook("abc");
 
 
         this.borrowings.add(borrowed);
@@ -121,12 +114,12 @@ public class UmbController {
 
     @GetMapping("/api/borrowing/{id}")
     public BorrowedBook getBorrowings(@PathVariable Integer id){
-        return bookService.getBorrowings(id);
+        return borrowedService.getBorrowings(id);
     }
 
     @DeleteMapping("/api/borrowings/{id}")
     public void DeleteBorrowing(@PathVariable Integer id){
-        bookService.DeleteBorrowing(this.books.remove(this.books.get(id)));
+        borrowedService.DeleteBorrowing(id);
     }
 
 
