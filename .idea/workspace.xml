@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="edit + services">
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added class services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="4" />
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="74ef7e10-f762-4b1c-bd33-82a7227db2c8" />
@@ -108,8 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.DemoApplication (1)" />
+    </list>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -146,6 +150,7 @@
       <workItem from="1646139073852" duration="263000" />
       <workItem from="1646580242630" duration="2771000" />
       <workItem from="1646583213455" duration="4000" />
+      <workItem from="1646593289887" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="Upload Rest API with Library backend.">
       <created>1644960504973</created>
@@ -200,7 +205,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -212,7 +217,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload Rest API with Library backend." />
@@ -221,89 +225,5 @@
     <MESSAGE value="borrowedbook uprava, users uprava" />
     <MESSAGE value="edit + services" />
     <option name="LAST_COMMIT_MESSAGE" value="edit + services" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="10" width="702" height="803" key="#DemoApplication" timestamp="1645881081664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="10" width="702" height="803" key="#DemoApplication/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881081664" />
-    <state x="424" y="10" key="#DemoApplication_(1)" timestamp="1645880934399">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="10" key="#DemoApplication_(1)/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645880934399" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645882310784">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645882310784" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1646580925454">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646580925454" />
-    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1645881000161">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="498" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645881000161" />
-    <state x="629" y="324" key="Github.Dialog.Accounts.Choose" timestamp="1645884246546">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="629" y="324" key="Github.Dialog.Accounts.Choose/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1645884246546" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1646583043467">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043467" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1646583043467">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043467" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1646583043467">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043467" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1646583043467">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043467" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1646583043468">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043468" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646049517104" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1646583043468">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043468" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1646583043468">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043468" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1646583043468">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583043468" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646049517103" />
-    <state x="147" y="64" key="MergeDialog" timestamp="1646139240085">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="64" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1646139240085" />
-    <state x="12" y="0" key="SettingsEditor" timestamp="1646580287713">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="12" y="0" key="SettingsEditor/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646580287713" />
-    <state x="12" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646049463757" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1646583024072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646583024072" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1646582971465">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.-145.1536.824@0.0.1536.824" timestamp="1646582971465" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1646139203524" />
   </component>
 </project>
