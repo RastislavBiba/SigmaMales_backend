@@ -7,43 +7,33 @@ import java.util.List;
 
 @RestController
 public class CustomersController{
-    public CustomersController(List<User> users){
-        this.users = init();
-    }
-    private List<User> users;
     private CustomerService customerService;
-    private List<User> init(){
-        List<User> users = new ArrayList<>();
-        User user1 = new User();
-        user1.setId(1);
-        user1.setFirstName("Janko");
-        user1.setLastName("Mrkvicka");
-        user1.setEmail("janko.mrkvicka@example.com");
+    public CustomersController(CustomerService customerService){
+        this.customerService = customerService;
+    }
 
-        users.add(user1);
-
-        return users;
-    }
-    @PostMapping("/api/customer")
-    public Integer createCustomer(@RequestBody User user){
-        return customerService.createCustomer(user);
-    }
-    @GetMapping("/api/customers/{customerId}")
-    public User listCustomers(@PathVariable int customerId){
-        return customerService.listCustomers(customerId);
-    }
     @GetMapping("/api/customers")
-    public List<User> getList(@RequestParam(required = false) String firstName){
+    public List<CustomerDto> getCustomers(@RequestParam(required = false) String firstName ){
+        return customerService.getCustomers(firstName);
+    }
 
-        return customerService.getList(firstName);
+    @GetMapping("/api/customers/{customerId}")
+    public CustomerDto getCustomer(@PathVariable Long customerId){
+        return customerService.getCustomer(customerId);
     }
-    @GetMapping("/api/customers/{Id}")
-    public List<User> getUserId(@RequestParam(required = false) Integer customerId){
 
-        return customerService.getUserId(customerId);
+    @PostMapping("/api/customers")
+    public Long createCustomer(@RequestBody CustomerDto customerDto){
+      return customerService.createCustomer(customerDto);
     }
-    @DeleteMapping("/api/customers/{Id}")
-    public void deleteCustomer(@PathVariable Integer userId){
-        customerService.deleteCustomer(userId);
-    }
+
+   @DeleteMapping("/api/customers{customerId}")
+    public void deleteBook(@PathVariable int customerId){
+        customerService.deleteCustomer(customerId);
+   }
+
+   @PutMapping("/api/books/{bookId}")
+    public void updateCustomer(@PathVariable int customerId, @RequestBody CustomerDto customerDto){
+        customerService.updateCustomer(customerId, customerDto);
+   }
 }

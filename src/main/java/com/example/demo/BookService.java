@@ -1,109 +1,75 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
+import javax.transaction.Transactional;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookService {
-    private List<Book> books;
-    private List<BorrowedBook> borrowings;
-    private List<User> users;
-    private BookService bookService;
+    private final BookRepository bookRepository;
 
-    public List<Book> getBooks(@RequestParam(required = false) String bookAuthor){
-        List<Book> filteredBooks = new ArrayList<>();
-        for (Book book : books){
-            if (book.getAuthor().equals(bookAuthor)){
-                filteredBooks.add(book);
-            }
+    public BookService(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
+    private static BookDto mapToBookDto(BookEntity bookEntity) {
+        BookDto bookDto = new BookDto();
+
+        bookDto.setAuthor(bookEntity.getAuthor());
+        bookDto.setTitle(bookEntity.getTitle());
+
+        return bookDto;
+    }
+
+    @Transactional
+    public List<BookDto> getBooks(String bookAuthor) {
+        List<BookDto> ret = new LinkedList<>();
+        for (BookEntity b1 : bookRepository.findAll()) {
+            BookDto b2 = mapToBookDto(b1);
+            ret.add(b2);
         }
-        Book book = new Book();
-        return this.books;
+        return ret;
     }
 
-    private List<User> initUsers(){
-        List<User> users = new ArrayList<>();
-        User user1 = new User();
-        user1.setId(1);
-        user1.setFirstName("adam");
-        user1.setLastName("novy");
-        user1.setEmail("random mail");
-
-        users.add(user1);
-        return users;
-    }
-
-    private List<Book> initBooks(){
-        List<Book> books = new ArrayList<>();
-        Book book1 = new Book();
-        book1.setAuthor("Arthur");
-        book1.setTitle("Study in Red");
-        books.add(book1);
-
-        Book book2 = new Book();
-        book2.setAuthor("Michal");
-        book2.setTitle("Pisem knihu");
-        books.add(book2);
-
-        return books;
-    }
-
-
-
-
-    public Book getBook(@PathVariable Integer bookId){
-        return this.books.get(bookId);
-    }
-
-    public Integer createBook(@RequestBody Book book){
-        this.books.add(book);
-        return this.books.size()-1;
-    }
-    public void DeleteBook(@PathVariable Integer bookId){
-        this.books.remove(this.books.get(bookId));
-    }
-
-    public void updateBook(@PathVariable Integer bookId, @RequestBody Book book){
-        this.books.get(bookId).setTitle(book.getTitle());
-        this.books.get(bookId).setAuthor(book.getAuthor());
-    }
-
-
-
-
-    //borrowings
-
-
-
-
-
-
-    // public List<BorrowedBook> getBorrowings(@RequestParam(required = false) String bookAuthor){
-
-        /*List<Book> filteredBooks = new ArrayList<>();
-        for (Book book : books){
-            if (book.getAuthor().equals(bookAuthor)){
-                filteredBooks.add(book);
-            }
+    @Transactional
+    public BookDto getBook(Long bookId) {
+        Optional<BookEntity> byId = bookRepository.findById(bookId);
+        if (byId.isPresent()) {
+            return mapToBookDto(byId.get());
         }
-        Book book = new Book();*/
+        return null;
+    }
 
-     //   return this.borrowings;
-  //  }
+    @Transactional
+    public Long createBook(BookDto bookDto) {
+        BookEntity bookEntity = new BookEntity();
 
-  //  public static BorrowedBook getBorrowings(@PathVariable Integer id){
-  //      return this.borrowings.get(id);
-  //  }
+        bookEntity.setAuthor(bookDto.getAuthor());
+        bookEntity.setTitle(bookDto.getTitle());
 
-  //  public void DeleteBorrowing(@PathVariable Integer id){
-  //      this.borrowings.remove(this.borrowings.get(id));
-   // }
+        this.bookRepository.save(bookEntity);
+
+        return bookEntity.getId();
+    }
+
+    @Transactional
+    public void updateBook(int bookId, BookDto bookDto) {
+        Optional<BookEntity> byId = bookRepository.findById((long)bookId);
+        if (byId.isPresent()) {
+            byId.get().setAuthor(bookDto.getAuthor());
+            byId.get().setTitle(bookDto.getTitle());
+        }
+    }
+
+    @Transactional
+    public void deleteBook(int bookId) {
+        Optional<BookEntity> byId = bookRepository.findById((long)bookId);
+        if (byId.isPresent()) {
+            bookRepository.delete(byId.get());
+        }
+    }
 
 }
-
-
