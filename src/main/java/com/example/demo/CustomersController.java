@@ -32,7 +32,7 @@ public class CustomersController{
         customerService.deleteCustomer(customerId);
    }
 
-   @PutMapping("/api/books/{bookId}")
+   @PutMapping("/api/books/{customerId}")
     public void updateCustomer(@PathVariable int customerId, @RequestBody CustomerDto customerDto){
         customerService.updateCustomer(customerId, customerDto);
    }

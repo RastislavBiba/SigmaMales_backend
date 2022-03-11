@@ -1,12 +1,8 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -14,15 +10,18 @@ import java.util.Optional;
 @Service
 public class CustomerService {
     private final CustomerRepository customerRepository;
+
     public CustomerService(CustomerRepository customerRepository){
         this.customerRepository = customerRepository;
     }
+
     private static CustomerDto maptoCustomerDto(CustomerEntity customerEntity){
         CustomerDto customerDto = new CustomerDto();
 
         customerDto.setFirstName(customerEntity.getFirstName());
         customerDto.setLastName(customerEntity.getLastName());
         customerDto.setEmail(customerDto.getEmail());
+
         return customerDto;
     }
     @Transactional
@@ -105,4 +104,5 @@ public class CustomerService {
     public void deleteCustomer(@PathVariable Integer userId){
         this.users.remove(this.users.get(userId));
     } */
+
 }
