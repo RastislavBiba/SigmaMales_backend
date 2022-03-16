@@ -22,27 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="persistent layer to CustomerEntity">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBookDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBookEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedBookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BorrowedService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CustomersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/CustomersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/CustomersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/DemoApplicationTests.class" beforeDir="false" />
-    </list>
+    <list default="true" id="d4f379b2-53db-4e1f-8b63-9752857e7172" name="Changes" comment="Added docker-compose.yml&#10;Fix bugs, executable without classes borrowed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646827748208</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added docker-compose.yml&#10;Fix bugs, executable without classes borrowed">
+      <created>1647023450719</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647023450719</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +282,8 @@
     <MESSAGE value="edit + services" />
     <MESSAGE value="Added persisent" />
     <MESSAGE value="persistent layer to CustomerEntity" />
-    <option name="LAST_COMMIT_MESSAGE" value="persistent layer to CustomerEntity" />
+    <MESSAGE value="Added docker-compose.yml&#10;Fix bugs, executable without classes borrowed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docker-compose.yml&#10;Fix bugs, executable without classes borrowed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SigmaMales$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1646832199999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
