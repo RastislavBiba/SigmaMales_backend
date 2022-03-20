@@ -3,6 +3,7 @@ package com.example.demo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class BorrowedBookEntity {
@@ -10,9 +11,29 @@ public class BorrowedBookEntity {
     @GeneratedValue
     private Long id;
 
-    private String borrower;
+    @ManyToOne
+    private CustomerEntity borrower;
 
-    private String book;
+    @ManyToOne
+    private BookEntity book;
+
+    public CustomerEntity getBorrower() {
+        return borrower;
+    }
+
+    public void setBorrower(CustomerEntity borrower) {
+        this.borrower = borrower;
+    }
+
+    public BookEntity getBook() {
+        return book;
+    }
+
+    public void setBook(BookEntity book) {
+        this.book = book;
+    }
+    //private String borrower;
+    //private String book;
 
 
     public Long getId() {
@@ -23,7 +44,7 @@ public class BorrowedBookEntity {
         this.id = id;
     }
 
-    public String getBorrower() {
+    /*public String getBorrower() {
         return borrower;
     }
 
@@ -37,5 +58,6 @@ public class BorrowedBookEntity {
 
     public void setBook(String book) {
         this.book = book;
-    }
+    }*/
+
 }
